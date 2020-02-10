@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Linsoft_agency:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Linsoft_agency</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Linsoft_agency.war">
+      <element id="artifact" artifact-name="Linsoft_agency:war exploded" />
+    </root>
+  </artifact>
+</component>
