@@ -24,3 +24,4 @@ public interface SupplierMapper {
 
     int update(Supplier supplier);
 }
+

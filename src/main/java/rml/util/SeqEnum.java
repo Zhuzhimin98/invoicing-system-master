@@ -8,7 +8,6 @@ public enum SeqEnum {
     WARE_ID("WARE_ID"),
     VENDER_ID("VENDER_ID"),
     SUPPLIER_ID("SUPPLIER_ID");
-
     private String key;
 
     public String getKey() {

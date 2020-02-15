@@ -1,4 +1,4 @@
-/*
+  /*
 Navicat MySQL Data Transfer
 
 Source Server         : 192.168.195.161
@@ -118,8 +118,38 @@ CREATE TABLE `t_ware` (
   `created` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  -- ----------------------------
+-- Table structure for t_ware
+-- ----------------------------
+  DROP TABLE IF EXISTS `t_ware`;
+  CREATE TABLE `t_ware` (
+                            `id` int(11) NOT NULL DEFAULT '100000',
+                            `name` varchar(100) DEFAULT NULL,
+                            `supplier_id` int(11) DEFAULT NULL COMMENT '厂商编号',
+                            `sizes` varchar(500) DEFAULT NULL,
+                            `colours` varchar(5000) DEFAULT NULL,
+                            `status` int(4) NOT NULL DEFAULT '1',
+                            `modified` datetime DEFAULT NULL,
+                            `created` datetime DEFAULT NULL,
+                            PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+  -- ----------------------------
+-- Table structure for family
+-- ----------------------------
+  DROP TABLE IF EXISTS `family`;
+  CREATE TABLE `family` (
+                              `id` int(6) NOT NULL AUTO_INCREMENT,
+                              `name` varchar(100) DEFAULT NULL,
+                              `wx` varchar(100) DEFAULT NULL,
+                              `telephone` varchar(50) DEFAULT NULL,
+                              `address` varchar(5000) DEFAULT NULL,
+                              `status` int(4) NOT NULL DEFAULT '1',
+                              `modified` datetime DEFAULT NULL,
+                              `created` datetime DEFAULT NULL,
+                              PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=1008 DEFAULT CHARSET=utf8;
 
-INSERT INTO `ztest`.`t_sequence` (`id`, `name`, `current_num`) VALUES ('1', 'WARE_ID', '10000');
-INSERT INTO `ztest`.`t_sequence` (`id`, `name`, `current_num`) VALUES ('2', 'VENDER_ID', '1000');
-INSERT INTO `ztest`.`t_sequence` (`id`, `name`, `current_num`) VALUES ('3', 'SUPPLIER_ID', '100');
+INSERT INTO `test2`.`t_sequence` (`id`, `name`, `current_num`) VALUES ('1', 'WARE_ID', '10000');
+INSERT INTO `test2`.`t_sequence` (`id`, `name`, `current_num`) VALUES ('2', 'VENDER_ID', '1000');
+INSERT INTO `test2`.`t_sequence` (`id`, `name`, `current_num`) VALUES ('3', 'SUPPLIER_ID', '100');

@@ -5,9 +5,6 @@ import rml.vo.VenderVO;
 
 import java.util.List;
 
-/**
- * Created by linzhongxia on 2017/10/11.
- */
 public interface VenderService {
 
     VenderVO getById(Long id);

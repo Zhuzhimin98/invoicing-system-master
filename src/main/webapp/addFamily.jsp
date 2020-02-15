@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                        商家管理
+                        通讯录
                         <%--<small>Subheading</small>--%>
                     </h1>
                     <ol class="breadcrumb">
@@ -25,29 +25,29 @@
                             <i class="fa fa-dashboard"></i> <a href="${ctx}/dashboard.do">Dashboard</a>
                         </li>
                         <li class="active">
-                            <i class="fa fa-file"></i> 商家管理
+                            <i class="fa fa-file"></i> 通讯录
                         </li>
                     </ol>
                 </div>
             </div>
-            <form id="venderForm" action="${ctx}/vender/add.do" method="POST">
+            <form id="familyForm" action="${ctx}/family/add.do" method="POST">
                 <div class="row">
                     <div class="col-lg-8">
-                        <input type="hidden" id="id" name="id" value="${vender.id}">
+                        <input type="hidden" id="id" name="id" value="${family.id}">
                         昵称：
-                        <input type="text" id="name" name="name" value="${venderVO.name}">
+                        <input type="text" id="name" name="name" value="${familyVO.id}">
                     </div>
                     <div>
-                        <input type="text" id="name" name="name" value="${venderVO.name}">
+                        <input type="text" id="name" name="name" value="${familyVO.name}">
                     </div>
                     <div>
-                        <input type="text" id="name" name="name" value="${venderVO.name}">
+                        <input type="text" id="name" name="name" value="${familyVO.name}">
                     </div>
                     <div>
-                        <input type="text" id="name" name="name" value="${venderVO.name}">
+                        <input type="text" id="name" name="name" value="${familyVO.name}">
                     </div>
                     <div>
-                        <input type="text" id="name" name="name" value="${venderVO.name}">
+                        <input type="text" id="name" name="name" value="${familyVO.name}">
                     </div>
                 </div>
 
@@ -61,21 +61,21 @@
                                 <tr>
                                     <th>编号</th>
                                     <th>昵称</th>
-                                    <th>QQ号</th>
                                     <th>微信号</th>
                                     <th>电话号码</th>
+                                    <th>地址</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:if test="${venderList !='null'}">
-                                    <c:forEach items="${venderList}" var="vender">
+                                <c:if test="${familyList !='null'}">
+                                    <c:forEach items="${familyList}" var="family">
                                         <tr>
-                                            <td>${vender.id}</td>
-                                            <td>${vender.name}</td>
-                                            <td>${vender.qq}</td>
-                                            <td>${vender.wx}</td>
-                                            <td>${vender.telephone}</td>
+                                            <td>${family.id}</td>
+                                            <td>${family.name}</td>
+                                            <td>${family.wx}</td>
+                                            <td>${family.telephone}</td>
+                                            <td>${family.address}</td>
                                             <td><a>编辑</a> <a>删除</a></td>
                                         </tr>
                                     </c:forEach>

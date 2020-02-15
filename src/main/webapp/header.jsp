@@ -182,6 +182,9 @@
                 <li>
                     <a href="${ctx}/supplier/list.do"><i class="fa fa-fw fa-bars"></i> 供货商管理</a>
                 </li>
+                <li>
+                    <a href="${ctx}/family/list.do"><i class="fa fa-fw fa-bars"></i> 通讯录</a>
+                </li>
                 <%--<li>--%>
                     <%--<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i--%>
                             <%--class="fa fa-fw fa-arrows-v"></i> 交易管理 <i class="fa fa-fw fa-caret-down"></i></a>--%>
